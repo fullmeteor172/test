@@ -1,4 +1,9 @@
 #include<iostream>
+using namespace std;
+
+int ModuloTwo(int a, int b){
+    return a%b;
+}
 
 int MultTwo(int a, int b){
     return a*b;
@@ -8,7 +13,9 @@ int AddTwo(int a, int b){
     return a+b;
 }
 
-  
+int SubTwo(int a, int b){
+    return a-b;
+}
 void loops(){
     int i = 0;
     while (i < 5){
@@ -16,33 +23,37 @@ void loops(){
         i++;
     }
 }
-int SubTwo(int a, int b){
-    return a-b;
+void lol(){
+    cout<<endl<<"LOL";
 }
 
 void SplashScreen(){
-    std::cout<<"RUNNING THE ULTRA NEW NEW PROGRAM\tPRE_ALPHA_BUILD V 0.0.1"<<std::endl<<std::endl;
+    cout<<"RUNNING THE ULTRA NEW NEW PROGRAM\tPRE_ALPHA_BUILD V 0.0.1"<<endl<<endl;
 }
 
 void name(){
     char name[20];
-    std::cout<<std::endl<<"Enter your name: ";
-    std::cin>>name;
-    std::cout<<std::endl<<"It's good to meet you "<<name;
+    cout<<endl<<"Enter your name: ";
+    cin>>name;
+    cout<<endl<<"It's good to meet you "<<name;
 }
 
 int main(){
 SplashScreen();
-std::cout<<"Hello World!";
+cout<<"Hello World!";
 name();
 int num[2];
-std::cout<<std::endl<<"Enter one number: ";
-std::cin>>num[0];
-std::cout<<std::endl<<"Enter second number: ";
-std::cin>>num[1];
-std::cout<<std::endl<<"The sum of these numbers is: "<<AddTwo(num[0],num[1]);
-std::cout<<std::endl<<"The diff of these two numbers is: "<<SubTwo(num[0], num[1]);
-std::cout<<std::endl<<"The product of these two numbers is: "<<MultTwo(num[0],num[1]);
-loops();
+cout<<endl<<"Enter one number: ";
+cin>>num[0];
+cout<<endl<<"Enter second number: ";
+cin>>num[1];
+cout<<endl<<"The sum of these numbers is: "<<AddTwo(num[0],num[1]);
+cout<<endl<<"The sum of these numbers is: "<<AddTwo(num[0],num[1]);
+cout<<endl<<"The diff of these two numbers is: "<<SubTwo(num[0], num[1]);
+cout<<endl<<"The product of these two numbers is: "<<MultTwo(num[0],num[1]);
+cout<<endl<<"The remainder of the division of these two numbers is: "<<ModuloTwo(num[0], num[1]);
+cout<<endl;
+lol();
+loops();    
 return 0;
 }
