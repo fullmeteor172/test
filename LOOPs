@@ -1,0 +1,8 @@
+void loops(){
+    int i = 0;
+    while (i < 5){
+        count << "DHROOOOVE" <<endl;
+        i++;
+    }
+}
+loops();
