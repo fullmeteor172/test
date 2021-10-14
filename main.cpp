@@ -37,3 +37,10 @@ std::cout<<std::endl<<"The diff of these two numbers is: "<<SubTwo(num[0], num[1
 std::cout<<std::endl<<"The product of these two numbers is: "<<MultTwo(num[0],num[1]);
 return 0;
 }
+using namespace std;
+main() {
+   int max;
+   max = 100; //set the upper bound to generate the random number
+   srand(time(0));
+   cout << "The random number is: "<<rand()%max;
+}
