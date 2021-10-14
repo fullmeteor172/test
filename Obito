@@ -1,6 +1,8 @@
+void a() {
+  cout << "Coded by \nDhruv - The supreme leader";
+}
 
 int main() {
-  cout << "Coded by";
-  cout << "Dhruv - The supreme leader";
+  a();
   return 0;
 }
