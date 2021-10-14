@@ -36,6 +36,10 @@ int main(){
 SplashScreen();
 cout<<"Hello World!";
 name();
+int max;
+max = 100; //set the upper bound to generate the random number
+srand(time(0));
+cout << "The random number is: "<<rand()%max;
 int num[2];
 cout<<endl<<"Enter one number: ";
 cin>>num[0];
@@ -49,10 +53,5 @@ cout<<endl;
 lol();
 return 0;
 }
-using namespace std;
-main() {
-   int max;
-   max = 100; //set the upper bound to generate the random number
-   srand(time(0));
-   cout << "The random number is: "<<rand()%max;
-}
+
+   
