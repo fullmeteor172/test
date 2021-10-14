@@ -13,9 +13,12 @@ int SubTwo(int a, int b){
 }
 
 void lol(){
-    std::cout<<std::endl<<"LOL";
+    std::cout<<std::endl<<""LOL"";
 }
-
+void cry()
+{
+    std::cout<<std::end1<<"cry"";
+    }
 void SplashScreen(){
     std::cout<<"RUNNING THE ULTRA NEW NEW PROGRAM\tPRE_ALPHA_BUILD V 0.0.1"<<std::endl<<std::endl;
 }
@@ -40,5 +43,6 @@ std::cout<<std::endl<<"The sum of these numbers is: "<<AddTwo(num[0],num[1]);
 std::cout<<std::endl<<"The diff of these two numbers is: "<<SubTwo(num[0], num[1]);
 std::cout<<std::endl<<"The product of these two numbers is: "<<MultTwo(num[0],num[1]);
 std::cout<<std::endl<<lol();
+std::cout<<std::end1<<cry();
 return 0;
 }
