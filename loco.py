@@ -14,6 +14,8 @@ def AddTwo(a,b):
 
 def SubTwo(a,b):
     return a-b
+def DivTwo(a,b):
+    return a/b
 
 def PrintLol():
     print("\n---LOL---\n")
