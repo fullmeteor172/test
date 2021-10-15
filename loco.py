@@ -77,3 +77,22 @@ def main():
 
 if __name__ == "__main__":
     main()
+   
+def eopf():
+    f = 1
+    n = int(input("Enter your number :"))
+    if n%2==0:
+        print("your number is even :",n)
+    else:
+        print("your number is odd :",n)
+    if n > 1:
+        for i in range(2,n):
+            if (n % i) == 0:
+                print("Your number is not a prime number :",n)
+                break
+        else:
+            print("Your number is a prime number :",n)
+    for i in range(1,n + 1):
+       f = f*i
+    print("The factorial of",n,"is",f)
+eopf()
