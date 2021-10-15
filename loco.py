@@ -62,6 +62,12 @@ def main():
     print("The product is: " + str(MultTwo(num1, num2)))
     print("The mod is: " + str(ModTwo(num1, num2)))
     print("The Factorials are: ", GetFact(num1), " and ", GetFact(num2))
+
+    #Footer
+    PrintEnd():
+        
+if __name__ == "__main__":
+    main()
     
 def eopf():
     f = 1
@@ -81,10 +87,3 @@ def eopf():
        f = f*i
     print("The factorial of",n,"is",f)
 eopf()
-
-    #Footer
-    PrintEnd();
-
-
-if __name__ == "__main__":
-    main()
