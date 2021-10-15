@@ -1,3 +1,5 @@
+#This is a python port of main.cpp
+
 def ModTwo(a,b):
     return a%b
 
