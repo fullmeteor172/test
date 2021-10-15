@@ -72,16 +72,21 @@ def main():
     if SixNineCheck(num1, num2):
         print("\n\nOhhh! 69 is a nice choice ( ͡~ ͜ʖ ͡°)")
     
-    print("What opperation to perform Addition/Subtraction/Multiplication/Division/Modulo")
-    print("Addition = A Subtraction = S Multiplication = M Division = D Modulo = Mod")
+    print("What opperation to perform 1. Addition \n  2.Subtraction \n 3.Multiplication \n 4.Division \n 5.Modulo \n 6.Factorial")
+    print("1.Addition = A \n 2.Subtraction = S \n 3.Multiplication = M \n 4. Division = D \n 5.Modulo = Mod \n 6. Factorial  = F")
     value = str(input("\n Enter opperation: "))
     
     #Printing operations on the two numbers
-    print("The sum is: " + str(AddTwo(num1, num2)))
-    print("The difference is: " + str(SubTwo(num1, num2)))
-    print("The product is: " + str(MultTwo(num1, num2)))
-    print("The mod is: " + str(ModTwo(num1, num2)))
-    print("The Factorials are: ", GetFact(num1), " and ", GetFact(num2))
+    if(value == "A" or value == "a"):
+        print("The sum is: " + str(AddTwo(num1, num2)))
+    if(value == "S" or value == "s"):
+        print("The difference is: " + str(SubTwo(num1, num2)))
+    if(value == "M" or value == "m"):
+        print("The product is: " + str(MultTwo(num1, num2)))
+    if(value == "Mod" or value == "m"):    
+        print("The mod is: " + str(ModTwo(num1, num2)))
+    if(value == "F" or value == "f"):
+        print("The Factorials are: ", GetFact(num1), " and ", GetFact(num2))
 
     #Footer
     PrintEnd();
