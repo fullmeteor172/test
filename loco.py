@@ -15,16 +15,13 @@ def AddTwo(a,b):
 def SubTwo(a,b):
     return a-b
 
-<<<<<<< HEAD
 def PrintLol():
     print("\n---LOL---\n")
 def Cry():
     print("\n-----Cry----\n")
-=======
 def PrintEnd():
     print("\n---End---\n")
 
->>>>>>> faa8d931f2ddec497b04b481e9a502b7cc2e16a7
 
 def GetAndPrintName():
     userName = input("\nEnter your name: ")
@@ -80,27 +77,12 @@ def main():
     value = str(input("\n Enter opperation: "))
     
     #Printing operations on the two numbers
-<<<<<<< HEAD
-    if (value == "A" or  value =="a"):
-        print("The sum is: " + str(AddTwo(num1, num2)))
-    elif (value == "S" or  value == "s"):
-        print("The difference is: " + str(SubTwo(num1, num2)))
-    elif (value == "M" or  value == "s"):  
-        print("The product is: " + str(MultTwo(num1, num2)))
-    elif (value == "D" or  value == "d"):
-         print("The div is: " + str(ModTwo(num1, num2)))
-    elif (value == "Mod" or  value == "mod"):
-        print("The mod is: " + str(ModTwo(num1, num2)))
-    else:
-        Cry()
-=======
     print("The sum is: " + str(AddTwo(num1, num2)))
     print("The difference is: " + str(SubTwo(num1, num2)))
     print("The product is: " + str(MultTwo(num1, num2)))
     print("The mod is: " + str(ModTwo(num1, num2)))
     print("The Factorials are: ", GetFact(num1), " and ", GetFact(num2))
 
->>>>>>> faa8d931f2ddec497b04b481e9a502b7cc2e16a7
     #Footer
     PrintEnd();
 
