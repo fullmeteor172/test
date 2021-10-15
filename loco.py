@@ -50,8 +50,8 @@ def PrintHeader():
     print("\n\n---GIT TESTING DUMMY APP v 0.04 PY EDITION---")
 
 def GetTwoNumbers():
-    num1 = int(input("\nEnter one number: "))
-    num2 = int(input("Enter another number: "))
+    num1 = int(input("\nEnter one number : "))
+    num2 = int(input("Enter another number : "))
     return num1, num2
 
 def SixNineCheck(a,b):
@@ -88,11 +88,11 @@ def main():
     p=oe(num1,num2)
     q=prime(num1)
     r=prime(num2)
-    print("The sum is: " + str(AddTwo(num1, num2)))
-    print("The difference is: " + str(SubTwo(num1, num2)))
-    print("The product is: " + str(MultTwo(num1, num2)))
-    print("The mod is: " + str(ModTwo(num1, num2)))
-    print("The Factorials are: ", GetFact(num1), " and ", GetFact(num2))
+    print("The sum is : " + str(AddTwo(num1, num2)))
+    print("The difference is : " + str(SubTwo(num1, num2)))
+    print("The product is : " + str(MultTwo(num1, num2)))
+    print("The mod is : " + str(ModTwo(num1, num2)))
+    print("The Factorials are : ", GetFact(num1), " and ", GetFact(num2))
 
     #Footer
     PrintEnd();
