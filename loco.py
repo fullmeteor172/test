@@ -1,5 +1,8 @@
 #This is a python port of main.cpp
 
+def DivTwo(a,b):
+    return a/b
+
 def ModTwo(a,b):
     return a%b
 
@@ -46,19 +49,21 @@ def main():
     if SixNineCheck(num1, num2):
         print("\n\nOhhh! 69 is a nice choice ( ͡~ ͜ʖ ͡°)")
     
-    print("What opperation to perform Addition/Subtraction/Multiplication/Division")
-    print("Addition = A Subtraction = S Multiplication = M Division = D")
-    value = input("\n Enter opperation: ")
+    print("What opperation to perform Addition/Subtraction/Multiplication/Division/Modulo")
+    print("Addition = A Subtraction = S Multiplication = M Division = D Modulo = Mod")
+    value = str(input("\n Enter opperation: "))
     
     #Printing operations on the two numbers
-    if value == "A":
+    if (value == "A" or  value =="a"):
         print("The sum is: " + str(AddTwo(num1, num2)))
-    elif value == "S":
+    elif (value == "S" or  value == "s"):
         print("The difference is: " + str(SubTwo(num1, num2)))
-    elif value == "M" :  
+    elif (value == "M" or  value == "s"):  
         print("The product is: " + str(MultTwo(num1, num2)))
-    elif value == "D":
-         print("The mod is: " + str(ModTwo(num1, num2)))
+    elif (value == "D" or  value == "d"):
+         print("The div is: " + str(ModTwo(num1, num2)))
+    elif (value == "Mod" or  value == "mod"):
+        print("The mod is: " + str(ModTwo(num1, num2)))
     else:
         Cry()
     #Footer
