@@ -19,6 +19,9 @@ int SubTwo(int a, int b){
     return a-b;
 }
 
+int DivTwo(int a, int b){
+    return float(a/b);
+}
 void PrintLol(){
     cout << endl << "LOL" << endl;
 }
@@ -26,6 +29,7 @@ void PrintLol(){
 void PrintHeader(){
     cout << "----GIT TESTING DUMMY APPLICATION V 0.02---\n\n";
 }
+
 
 void GetAndPrintName(){
     string name;
@@ -49,8 +53,17 @@ int main(){
     if(num[0]==69 || num[1] == 69){
         cout << endl << "ohh!, 69 is a nice choice " << endl;
     }
-    
+    string value;
+    cout << "What opperation to perform Addition/Subtraction/Multiplication/Division/Modulo";
+    cout << "Addition = A Subtraction = S Multiplication = M Division = D Modulo = Mod";
+    cout << endl << " Enter opperation: "<< endl; 
+    cin >> value ;
     //Printing operations of those numbers
+    if(value == "a" || "A")  {cout << "\nThe sum is: " << AddTwo(num[0], num[1]);}
+    if (value == "s" || "S"){ cout << "\nThe difference is: " << SubTwo(num[0], num[1]);}
+    if (value == "m" || "M"){cout << "\nThe product is: " << MultTwo(num[0], num[1]);}
+    if (value == "Mod" || "mod"){cout << "\nThe mod is: " << ModuloTwo(num[0], num[1]);}
+    if (value == "D" || "d"){cout << "\nThe mod is: " << DivTwo(num[0], num[1]);}
     cout << "\nThe sum is: " << AddTwo(num[0], num[1]);
     cout << "\nThe difference is: " << SubTwo(num[0], num[1]);
     cout << "\nThe product is: " << MultTwo(num[0], num[1]);
