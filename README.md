@@ -6,8 +6,8 @@ The purpose of this repo is to learn about git and github.
 
 - [x] Basics of Git and GitHub
 - [x] Send and merge pull requests
-- [ ] Dealing with merge conflicts
-- [ ] Handling multiple contributors
+- [x] Dealing with merge conflicts
+- [x] Handling multiple contributors
 - [ ] Creating Issues and solving them
 - [ ] Automating Merge checks
 
