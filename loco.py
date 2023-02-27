@@ -1,5 +1,8 @@
 #This is a python port of main.cpp
 
+def DivTwo(a,b):
+    return a/b
+
 def ModTwo(a,b):
     return a%b
 
@@ -11,7 +14,13 @@ def AddTwo(a,b):
 
 def SubTwo(a,b):
     return a-b
+def DivTwo(a,b):
+    return a/b
 
+def PrintLol():
+    print("\n---LOL---\n")
+def Cry():
+    print("\n-----Cry----\n")
 def PrintEnd():
     print("\n---End---\n")
 
@@ -39,6 +48,7 @@ def SixNineCheck(a,b):
     if a == 69 or b == 69:
         return True
     else:
+        return False    
         return False
     
 def GetFact(n):
@@ -80,12 +90,21 @@ def main():
     if SixNineCheck(num1, num2):
         print("\n\nOhhh! 69 is a nice choice ( ͡~ ͜ʖ ͡°)")
     
+    print("What opperation to perform 1. Addition \n  2.Subtraction \n 3.Multiplication \n 4.Division \n 5.Modulo \n 6.Factorial")
+    print("1.Addition = A \n 2.Subtraction = S \n 3.Multiplication = M \n 4. Division = D \n 5.Modulo = Mod \n 6. Factorial  = F")
+    value = str(input("\n Enter opperation: "))
+    
     #Printing operations on the two numbers
-    print("The sum is: " + str(AddTwo(num1, num2)))
-    print("The difference is: " + str(SubTwo(num1, num2)))
-    print("The product is: " + str(MultTwo(num1, num2)))
-    print("The mod is: " + str(ModTwo(num1, num2)))
-    print("The Factorials are: ", GetFact(num1), " and ", GetFact(num2))
+    if(value == "A" or value == "a"):
+        print("The sum is: " + str(AddTwo(num1, num2)))
+    if(value == "S" or value == "s"):
+        print("The difference is: " + str(SubTwo(num1, num2)))
+    if(value == "M" or value == "m"):
+        print("The product is: " + str(MultTwo(num1, num2)))
+    if(value == "Mod" or value == "m"):    
+        print("The mod is: " + str(ModTwo(num1, num2)))
+    if(value == "F" or value == "f"):
+        print("The Factorials are: ", GetFact(num1), " and ", GetFact(num2))
 
     MaxOf3()
     n = input("\nEnter an expression : ")
